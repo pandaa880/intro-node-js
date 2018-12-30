@@ -1,7 +1,22 @@
 {
-  "adfsadf asfdasdf": {
-    "firstName": "adfsadf",
-    "lastName": "asfdasdf",
-    "phoneNumber": "asfdsf"
+  "Contact 1": {
+    "firstName": "Prashant",
+    "lastName": "Chaudhari",
+    "phoneNumber": "8980110959"
+  },
+  "Kiran Chaudhari": {
+    "firstName": "Kiran",
+    "lastName": "Chaudhari",
+    "phoneNumber": "8200293682"
+  },
+  "Mayur Dangar": {
+    "firstName": "Mayur",
+    "lastName": "Dangar",
+    "phoneNumber": "3482940024"
+  },
+  "Sangita Chaudhari": {
+    "firstName": "Sangita",
+    "lastName": "Chaudhari",
+    "phoneNumber": "9426313140"
   }
 }
