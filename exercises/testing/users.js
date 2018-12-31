@@ -9,8 +9,10 @@ const users = new Array(20).fill(0)
 
 // simulate async db call with promise
 const findUser = (id) => new Promise((resolve, reject) => {
-  const user = users.find(user => user.id === id)
+  // console.log(arr, id);
+  const user = users.find(item => item.id === Number(id))
   if (user) {
+    console.log(user);
     return resolve(user)
   }
   reject(new Error(`No user with id "${id}"`))
@@ -18,8 +20,8 @@ const findUser = (id) => new Promise((resolve, reject) => {
 
 // simulate async db call with promise
 const deleteUser = (id) => new Promise((resolve, reject) => {
-  const id = fixId(id)
-  const i = users.findIndex(user => user.id === id)
+  debugger;
+  const i = users.findIndex(user => user.id === Number(id))
 
   if (i < 0) {
     return reject(new Error(`No user with id "${id}"`))
@@ -30,6 +32,7 @@ const deleteUser = (id) => new Promise((resolve, reject) => {
 })
 
 module.exports = {
+  users,
   findUser,
   deleteUser
 }
